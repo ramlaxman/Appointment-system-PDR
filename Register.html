@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Registration</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="jsDatePick_ltr.min.css" />
+<script type="text/javascript" src="jsDatePick.min.1.3.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		new JsDatePick({
+			useMode:2,
+			target:"inputField",
+			dateFormat:"%d-%M-%Y"
+			
+		});
+	};
+</script>
+</head>
+<body bgcolor="skyblue">
+<center><font color=white size=5>The Patient Registration</font></center>
+<br><br><br><br><br><br>
+
+<form method=post action=afterregister.jsp>
+
+<table border="3" align="center">
+
+<tr><td>Enter name:</td>
+<td><input type=text name=txtnm></td></tr>
+
+<tr><td>Enter date of birth:</td>
+<td><input type=char name=txtdb id=inputField></td></tr>
+
+<tr><td>Sex:</td>
+<td>
+<input type="radio" name="txtrad" value="Male">Male
+<input type="radio" name="txtrad" value="Female">Female</td></tr>
+
+<tr><td>Phone number:</td>
+<td><input type=number name=tpn maxlength=10 type=number></td></tr>
+
+<tr><td>Enter city:</td>
+<td><input type=text name=ttct></td></tr>
+<tr><td>Username:</td>
+<td><input type=text name=ttun></td></tr>
+
+<tr><td>Password:</td>
+<td><input type=password name=ttpwd></td></tr>
+
+<tr><td><center><input type=submit name=txtsub value=SUBMIT></center></td>
+<td><center><input type=reset name=txtreset value=RESET></center></td></tr>
+
+
+</table>
+<br><br>
+<a href=patlogin.html><center><font size="4">Back</font></center></a>
+</form>
+<br><br>
+<a href="Home.html"><center><font size="4"><i>Home</i></center></font></a>
+</body>
+</html>
